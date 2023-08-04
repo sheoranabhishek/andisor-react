@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "aileron";
+	src: url("./assets/fonts/aileron-regular.otf");
+}
+
+@font-face {
+	font-family: "playfair";
+	src: url("./assets/fonts/playfair-display.ttf");
+}

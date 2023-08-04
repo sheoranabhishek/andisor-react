@@ -1,0 +1,38 @@
+.nav-link {
+	position: relative;
+	padding: 10px;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 1rem;
+	margin-left: 20px;
+}
+
+/* Add the underline effect */
+.nav-link::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: black;
+	transition: width 0.3s;
+}
+
+/* Add the underline effect */
+.nav-link.active {
+	font-weight: 800;
+	font-size: 1.5rem;
+}
+
+.nav-link:hover::after {
+	width: 100%;
+}
+
+.active::after {
+	width: 100%;
+}
+
+.action-links > *:not(:last-child) {
+	margin-right: 20px; /* Adjust the margin value as per your preference */
+}
